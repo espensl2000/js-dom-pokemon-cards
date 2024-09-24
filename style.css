@@ -25,6 +25,10 @@ h2 {
   text-align: center;
 }
 
+li{
+  overflow: auto
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, 375px);
@@ -52,11 +56,25 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.card--image-wrapper {
+  display: flex;
+  padding: 25px 25px 5px 25px;
+  align-items: center;
+}
+.card--image-button {
+  height: 50px;
+}
+
+.card--current-image-index{
+  text-align: center;
+}
+
 .card--text {
   margin: 0.2rem;
   padding: 1rem;
 
   border-radius: 5px;
+  
 }
 
 .card--img {
@@ -64,4 +82,5 @@ h2 {
   margin: 0 auto;
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  height: 265px;
 }
